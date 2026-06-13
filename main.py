@@ -11,10 +11,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # 🌟 حيلة التفكيك الرقمي: التوكن مشفر جوه الكود عشان نتخطى غلاسة الـ Secrets والـ Blocks
-p_num = "8600704101"
-p_alpha1 = "AAH06GOCcDB"
-p_alpha2 = "ofVRkBi2WI"
-p_alpha3 = "QJxpj5oNS2YU"
+p_num = "8876847147"
+p_alpha1 = "AAEuI96aC16"
+p_alpha2 = "BVfM9ToXn6"
+p_alpha3 = "BB3V4HqcCPX1jM"
 
 # التجميع السحري وقت تشغيل السيرفر فقط
 TOKEN = f"{p_num}:{p_alpha1}_{p_alpha2}_" + p_alpha3
