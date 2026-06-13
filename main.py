@@ -10,14 +10,10 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 🌟 حيلة التفكيك الرقمي: التوكن مشفر جوه الكود عشان نتخطى غلاسة الـ Secrets والـ Blocks
 p_num = "8876847147"
-p_alpha1 = "AAEuI96aC16"
-p_alpha2 = "BVfM9ToXn6"
-p_alpha3 = "BB3V4HqcCPX1jM"
+p_alpha1 = "AAEuI96aC16BVfM9ToXn6BB3V4HqcCPX1jM"
 
-# التجميع السحري وقت تشغيل السيرفر فقط
-TOKEN = f"{p_num}:{p_alpha1}_{p_alpha2}_" + p_alpha3
+TOKEN = f"{p_num}:{p_alpha1}"
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -139,7 +135,7 @@ def main():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
 
-    print("🤖 Production-ready Bot with final micro-calibration is running...")
+    print("🤖 Production-ready Bot with updated TOKEN is running...")
     application.run_polling()
 
 
